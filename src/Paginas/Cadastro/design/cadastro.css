@@ -1,0 +1,106 @@
+* {
+     margin: 0;
+}
+.Cadastro-main {
+     width: 100vw;
+     height: 100vh;
+     background-color: #9997a2;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.Cadastro-input {
+     width: 350px;
+     height: 500px;
+     background-color: white;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-between;
+}
+.User-cadastro {
+     margin-top: 20px;
+     width: 100%;
+     height: 150px;
+     background-color: white;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
+.User-cadastro > p {
+     margin-top: 10px;
+     font-size: 33px;
+     font-weight: 100;
+     font-family: sans-serif;
+}
+
+.Input-cadastro {
+     width: 100%;
+     height: 330px;
+     background-color: transparent;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
+.Name {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-evenly;
+}
+
+.FirstName,.CPF,.EMAIL,.PASS {
+     margin-top: 10px;
+     margin-bottom: -10px;
+}
+.First-Name:focus,.cpf:focus,.email:focus,.pass:focus,.Button-cadastro:focus {
+     
+     outline: none;
+     border:1px solid #3ba9e4;
+}
+.First-Name,.cpf,.email,.pass,.Button-cadastro {
+     height: 40px;
+     width: 250px;
+     border-radius: 5px;
+     margin-top: 10px;
+     outline: none;
+     border:1px solid #3ba9e4;
+}
+
+.Button-cadastro {
+     color: white;
+     background-color: #3ba9e4;
+     width: 90%;
+     height: 40px;
+
+}
+.Button-cadastro:active {
+     background-color: #2a78a1;
+
+}
+.Member-cadastro {
+     width: 100%;
+     height: 45px;
+     background-color: #eeedf2;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.Text-cadastro {
+     color: grey;
+}
+.link-cadastro{
+     color: #3ba9e4;
+     text-decoration: none;
+}
+.displayForm {
+     display: flex;
+     flex-direction: column;
+}
+.err {
+     color: red;
+     font-size: 12px;
+     font-family: sans-serif;
+}

@@ -1,0 +1,397 @@
+
+
+* {
+     margin: 0;
+}
+body {
+     overflow: hidden;
+}
+.Tarefas-main {
+     width: 100vw;
+     height: 100vh;
+     background-color: green;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+}
+.Header-tarefas {
+     position: relative;
+     width: 15vw;
+     height: 100vh;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     background-color: #82c6dd;
+     border-bottom: 1px solid grey;
+}
+.icon {
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+     height: 90%;
+     background-color: transparent;
+}
+.user {
+     width: 100%;
+     height: 10%;
+     background-color: rgba(128, 128, 128, 0.151);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.dados {
+     width: 100%;
+     height: 10%;
+     background-color: rgba(128, 128, 128, 0.151);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-top: 10px;
+}
+
+.insertDados {
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     background-image: url('adicionar.png');
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: 35px;
+}
+.iconUser {
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     background-image: url("User.webp");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: 50px;
+     
+}
+.completed {
+     width: 100%;
+     height: 10%;
+     background-color: rgba(128, 128, 128, 0.151);
+     margin-top: 10px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     
+}
+.iconCompleted {
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     background-image: url('verificar.png');
+     background-size: 30px;
+     background-position: center;
+     background-repeat: no-repeat;
+}
+.iconInCompleted {
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     background-image: url('lista.png');
+     background-size: 30px;
+     background-position: center;
+     background-repeat: no-repeat;
+}
+.incompleted {
+     width: 100%;
+     height: 10%;
+     margin-top: 10px;
+     background-color: rgba(128, 128, 128, 0.151);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.input-tarefas {
+     display: flex;
+     flex-direction: column;
+     background-color: transparent;
+     height: 330px;
+     padding-left: 10px;
+     padding-right: 10px;
+}
+.volta {
+     margin-left: -120px;
+     color: transparent;
+     font-size: 30px;
+     background-image: url('seta-para-a-esquerda (1).png');
+     background-size: 30px;
+     background-position: center;
+     background-repeat: no-repeat;
+}
+.Header-tarefas > .option-tarefas,.input-tarefas {
+     display: none;
+}
+.Header-tarefas:hover{
+     display: flex;
+}
+.labelForm {
+     margin-top: 10px;
+     margin-bottom: 10px;
+     font-size: 23px;
+     color: white;
+     font-family: sans-serif;
+}
+.addtarefaInput {
+     outline: none;
+     height: 30px;
+     border: none;
+     border-radius: 5px;
+}
+.addDescInput {
+     outline: none;
+     height: 30px;
+     border: none;
+     border-radius: 5px;
+     
+}
+.addDateTime {
+     outline: none;
+     height: 30px;
+     border: none;
+     border-radius: 5px;
+     
+}
+.buttonAddTarefa {
+     margin-top: 10px;
+     outline: none;
+     height: 30px;
+     border: none;
+     border-radius: 5px;
+     
+}
+
+.Tarefas {
+     width: 100vw;
+     height: 100vh;
+     background-color: whitesmoke;
+     display:flex;
+     align-items: center;
+     padding-left: 150px;
+     flex-direction: row;
+     flex-wrap: wrap;
+     overflow-y: scroll;
+     
+}
+.filtro {
+     
+     width: 100%;
+     height: 10%;
+     background-color: rgba(128, 128, 128, 0.151);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-top: 10px;
+}
+.tarefa {
+     margin: 7px;
+     width: 220px;
+     height: 260px;
+     background-color: khaki;
+     word-break: break-all;
+     display: flex;
+     flex-direction: column;
+}
+
+.info {
+     width: 100%;
+     height: 25px;
+     border-bottom: 1px solid black;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+}
+.id {
+     display: none;
+}
+.verificado {
+     width: 30px;
+     height: 100%;
+     background-color: transparent;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.caixa {
+     width: 20px;
+     height: 20px;
+}
+
+.caixaCompleted {
+     width: 20px;
+     height: 20px;  
+}
+#completed  {
+     background-color: #aaaaaa;
+}
+.colors {
+     width: 30%;
+     height: 100%;
+     background-color: transparent;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+     margin-left: 5px;
+}
+#colorUm,#colorDois,#colorTres {
+     width: 13px;
+     height: 13px;
+     border-radius: 50%;
+     border: 1px solid black;
+}
+#colorUm:active,#colorDois:active,#colorTres:active {
+     margin-top: 3px;
+}
+
+#colorUm {
+     background-color: #f0e78c;
+}
+#colorDois {
+     background-color: rgba(0, 128, 0, 0.452);
+}
+#colorTres {
+     background-color: aquamarine;
+}
+.exit {
+     background-image: url('cruz-pequeno.png');
+     background-size: 28px;
+     background-position: center;
+     background-repeat: no-repeat;
+     width: 30%;
+     height: 100%;
+     background-color: transparent;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-family: sans-serif;
+     font-weight: 500;
+     border: none;
+}
+.exit:active {
+     background-color: #5c59375d;
+}
+.organizado-display{
+     height: 90%;
+     display: flex;
+     flex-direction: column;
+}
+.textoTarefa {
+     margin-left: 5px;
+     font-size: 25px;
+     font-family: sans-serif;
+     background-color: transparent;
+}
+.DescTarefa {
+     font-size: 15px;
+     margin-left: 10px;
+     color: gray;
+     background-color: transparent;
+     margin-top: 5px;
+}
+.textoTarefa:hover,.DescTarefa:hover {
+     background-color: rgba(128, 128, 128, 0.144);
+}
+.DateTarefa {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: rgba(128, 128, 128, 0.315);
+}
+#atualizaDados {
+     font-family: sans-serif;
+     border: none;
+     background-color: transparent;
+     outline: none;
+     margin: 3px;
+     font-size: 20px;
+     background-color: rgba(128, 128, 128, 0.144);
+}
+#atualizaDesc {
+     background-color: rgba(128, 128, 128, 0.144);
+     outline: none;
+     border: none;
+     margin-top: 5px;
+     margin-top: 5px;
+}
+.ContaUser {
+     width: 100%;
+     height: 200px;
+     background-color: transparent;
+     display: flex;
+     flex-direction: column;
+     padding-left: 10px;
+     padding-right: 10px;
+}
+.dadosUser {
+     color: white;
+     font-size: 20px;
+}
+.button-logout {
+     margin-top: 10px;
+     width: 90%;
+     outline: none;
+     border: none;
+     border-radius: 5px;
+}
+.button-logout:hover {
+     background-color: #d7d7d7;
+}
+@media (max-width:375px) {
+   
+     .Header-tarefas{
+          width: 250px;
+     }
+     .volta {
+          margin-left: -90px;
+          background-color: transparent;
+     }
+     .input-tarefas {
+          background-color: transparent;
+          width: 140px;
+          padding-left: 0px;
+          padding-right: 0px;
+     }
+     .Tarefas {
+         padding-left: 5px;
+     }
+}
+@media (min-width:410px){
+     .Header-tarefas {
+          width: 290px;
+     }
+     .Tarefas {
+          padding-left: 15px;
+     }
+     .icon > div {
+          height: 50px;
+     }
+}
+@media (width:684px){
+     .Header-tarefas {
+          width: 270px;
+     }
+     .Tarefas {
+          padding-left: 5px;
+     }
+     .icon > div {
+          height: 50px;
+     }
+}
+@media (width:667px){
+     .Header-tarefas {
+          width: 240px;
+     }
+     .Tarefas {
+          padding-left: 5px;
+     }
+     .icon > div {
+          height: 50px;
+     }
+}
