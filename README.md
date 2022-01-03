@@ -28,8 +28,8 @@ npm start
 
 ## 🛠️ Construído com
 
-<p>[html](https://developer.mozilla.org/pt-BR/docs/Web/HTML)- linguagem de marcação</p>
-<p>[css](https://developer.mozilla.org/pt-BR/docs/Web/CSS)-Cascading Style Sheets- adicionar estilo a pagina </p>
+<p>[html](https://developer.mozilla.org/pt-BR/docs/Web/HTML) - linguagem de marcação</p>
+<p>[css](https://developer.mozilla.org/pt-BR/docs/Web/CSS) -Cascading Style Sheets- adicionar estilo a pagina </p>
 <p>[React.js](https://pt-br.reactjs.org/) - framework javascript</p>
 
 ## ✒️ Autore
